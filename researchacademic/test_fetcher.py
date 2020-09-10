@@ -10,7 +10,7 @@ API_KEY = os.environ["MICROSOFT_API_KEY"]
 
 class TestEntityParser(unittest.TestCase):
     def setUp(self):
-        with open('researchacdamic/entity.json') as json_file:
+        with open('researchacademic/entity.json') as json_file:
             self.entity = json.load(json_file)
             self.ep = EP(self.entity)
 
