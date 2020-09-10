@@ -1,0 +1,335 @@
+{
+            "logprob": -20.398,
+            "prob": 1.3843986e-9,
+            "Id": 2082332677,
+            "Y": 2012,
+            "DN": "Reassessing the basis of the production effect in memory.",
+            "DOI": "10.1037/A0028466",
+            "V": "38",
+            "I": "6",
+            "IA": {
+                "IndexLength": 137,
+                "InvertedIndex": {
+                    "2": [
+                        75
+                    ],
+                    ":": [
+                        0
+                    ],
+                    "The": [
+                        1
+                    ],
+                    "production": [
+                        2,
+                        32,
+                        46,
+                        98,
+                        117
+                    ],
+                    "effect": [
+                        3,
+                        33
+                    ],
+                    "refers": [
+                        4
+                    ],
+                    "to": [
+                        5,
+                        25,
+                        58,
+                        80,
+                        84,
+                        92
+                    ],
+                    "a": [
+                        6,
+                        22,
+                        27,
+                        35,
+                        78,
+                        89,
+                        103,
+                        130,
+                        134
+                    ],
+                    "memory": [
+                        7
+                    ],
+                    "advantage": [
+                        8
+                    ],
+                    "for": [
+                        9,
+                        129
+                    ],
+                    "items": [
+                        10,
+                        14,
+                        83
+                    ],
+                    "studied": [
+                        11,
+                        15
+                    ],
+                    "aloud": [
+                        12
+                    ],
+                    "over": [
+                        13,
+                        34,
+                        133
+                    ],
+                    "silently.": [
+                        16
+                    ],
+                    "Ozubko": [
+                        17
+                    ],
+                    "and": [
+                        18,
+                        77,
+                        122
+                    ],
+                    "MacLeod": [
+                        19
+                    ],
+                    "(2010)": [
+                        20
+                    ],
+                    "used": [
+                        21
+                    ],
+                    "list-discrimination": [
+                        23
+                    ],
+                    "task": [
+                        24,
+                        91
+                    ],
+                    "support": [
+                        26,
+                        128
+                    ],
+                    "distinctiveness": [
+                        28,
+                        104,
+                        131
+                    ],
+                    "account": [
+                        29,
+                        53,
+                        132
+                    ],
+                    "of": [
+                        30,
+                        54,
+                        70,
+                        73,
+                        116
+                    ],
+                    "the": [
+                        31,
+                        59,
+                        71,
+                        74,
+                        85,
+                        114
+                    ],
+                    "strength": [
+                        36,
+                        106,
+                        135
+                    ],
+                    "account.": [
+                        37,
+                        107,
+                        136
+                    ],
+                    "We": [
+                        38
+                    ],
+                    "report": [
+                        39
+                    ],
+                    "new": [
+                        40
+                    ],
+                    "findings": [
+                        41
+                    ],
+                    "in": [
+                        42,
+                        123
+                    ],
+                    "this": [
+                        43,
+                        55
+                    ],
+                    "task--including": [
+                        44
+                    ],
+                    "negative": [
+                        45
+                    ],
+                    "effects--that": [
+                        47
+                    ],
+                    "better": [
+                        48
+                    ],
+                    "fit": [
+                        49
+                    ],
+                    "with": [
+                        50,
+                        101
+                    ],
+                    "an": [
+                        51
+                    ],
+                    "attributional": [
+                        52,
+                        60,
+                        95
+                    ],
+                    "task.": [
+                        56
+                    ],
+                    "According": [
+                        57
+                    ],
+                    "account,": [
+                        61
+                    ],
+                    "list": [
+                        62
+                    ],
+                    "judgments": [
+                        63
+                    ],
+                    "are": [
+                        64
+                    ],
+                    "influenced": [
+                        65
+                    ],
+                    "by": [
+                        66
+                    ],
+                    "recognition": [
+                        67,
+                        90
+                    ],
+                    "memory,": [
+                        68
+                    ],
+                    "knowledge": [
+                        69
+                    ],
+                    "composition": [
+                        72
+                    ],
+                    "lists,": [
+                        76
+                    ],
+                    "bias": [
+                        79
+                    ],
+                    "attribute": [
+                        81
+                    ],
+                    "non-recognized": [
+                        82
+                    ],
+                    "1st": [
+                        86
+                    ],
+                    "list.": [
+                        87
+                    ],
+                    "Using": [
+                        88
+                    ],
+                    "eliminate": [
+                        93
+                    ],
+                    "these": [
+                        94
+                    ],
+                    "influences": [
+                        96
+                    ],
+                    "revealed": [
+                        97
+                    ],
+                    "effects": [
+                        99,
+                        118
+                    ],
+                    "consistent": [
+                        100
+                    ],
+                    "either": [
+                        102
+                    ],
+                    "or": [
+                        105
+                    ],
+                    "In": [
+                        108
+                    ],
+                    "our": [
+                        109
+                    ],
+                    "discussion,": [
+                        110
+                    ],
+                    "we": [
+                        111
+                    ],
+                    "consider": [
+                        112
+                    ],
+                    "whether": [
+                        113
+                    ],
+                    "absence": [
+                        115
+                    ],
+                    "on": [
+                        119
+                    ],
+                    "implicit-memory": [
+                        120
+                    ],
+                    "tests": [
+                        121
+                    ],
+                    "between-group": [
+                        124
+                    ],
+                    "designs": [
+                        125
+                    ],
+                    "provides": [
+                        126
+                    ],
+                    "unequivocal": [
+                        127
+                    ]
+                }
+            },
+            "AA": [
+                {
+                    "DAuN": "Glen E. Bodner",
+                    "AuId": 2047873968
+                },
+                {
+                    "DAuN": "Alexander Taikh",
+                    "AuId": 2333340810
+                }
+            ],
+            "J": {
+                "JN": "journal of experimental psychology learning memory and cognition"
+            }
+        }
