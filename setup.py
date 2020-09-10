@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='researchacademic',
-    version='0.8.1',
+    version='0.8.2',
     description=("A python library that aims to retrieve data from Microsoft"
                  "Research Academic and parse data to human readable"),
     long_description=long_description,
