@@ -23,11 +23,18 @@ class ResearchAcademic(object):
             "attributes": self.attributes
         }
 
-    def parse_query(self, query, timeout=None):
+    def parse_query(self, query, search_timeout=None, timeout=None):
+        if not timeout:
+            timeout = 3
+
+        if not search_timeout:
+            search_timeout = 50
+
         url = self.base_url + "/interpret"
-        rsp = requests.get(url,
-                           {"query": query, "complete": 0, "timeout":  2000},
-                           headers=self.headers)
+        rsp = requests.get(
+            url,
+            {"query": query, "complete": 0, "timeout": search_timeout},
+            headers=self.headers, timeout=timeout)
 
         content = json.loads(rsp.content)
 
