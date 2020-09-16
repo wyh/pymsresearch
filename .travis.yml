@@ -1,23 +1,17 @@
-# https://zh.wikipedia.org/wiki/YAML
-# https://github.com/travis-ci/travis.rb#table-of-contents
-# https://docs.travis-ci.com/
 language: python
-python: 
-  - "3.8"
-
+python:
+- '3.8'
 install:
-  - pip install -r requirements.txt
-
-script: 
-  - python researchacademic/test_fetcher.py
-
+- pip install -r requirements.txt
+script:
+- python researchacademic/test_fetcher.py
 after_success:
-  - coveralls
-
+- coveralls
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
-  username: "__token__"
-  password: {{PASSWD}}
+  username: __token__
+  password: 
+    secure: LzvIpWQ937/GfLPJAMWB1NIn6LwwOT4EiqUHffhGmSvuOzdpZ6zzD2cSO1WwQZaaC78yxk/lNqx+HO81czyyoUmROkKomeF/6Mr+gg0BkDbDDIJO1gYIJOIhn32ldW6xgX9NwGV2Rd6OvDcpCdy10u3S9s+Mfppeki/CnMYd77q2DjEaNZ17qEr8HwmFC4VnWaQSKle2+4keZHAlmDkgP2loB79JgjGMHv+t3DD3PxJJh4BsnxpP3hVY7cksXOPB2qggLe+T0fIg2JZLlAcuUKlb2Exytv/h7SLHFIZglcXS/RCuNJoIS8lX7YGh/OUEo4Cq2xtGZmZ8dp3P8xXfXUr8WHDxDwo0v97xiK3MrLaj6ud1+WduYqjLX04RbA9J4WlIpeJPmj1m9SW2aHp4rrezzC/EHF39LBd4FFf7E+DudQQmOUyBiy2sRt9HxN3cjrDyilPmc8Lr0p8kq8oWelybL+n1G01brFrbgF0231rxaaYnxGc8CqY3gBh9+QA3+zScwPtXnqd3j+EjF3QdPRHMKL5inRvJSZ69eT07nLitbBRF2h5J1fqrzYkWQMOqroE1BlUYMTVGJYHi+u0M4/IXFXuyAys8PSXj4typmmQkvTOP0lOOy8TctnU5UR4WHtmaavmRuxGCNreXdhhXKLb0Q/XuvPFRPhvwxBKnHVI=
   on:
     tags: true
