@@ -31,15 +31,20 @@ class TestResearchAcademic(unittest.TestCase):
         self.ra = RA(API_KEY)
 
     def test_parse_query(self):
-        parsed_query = RA.parse_query({"doi": '10.1037/A0028466'})
+        parsed_query = self.ra.parse_query('10.1037/A0028466')
+
         expr = parsed_query["expr"]
         self.assertEqual(expr, "DOI='10.1037/A0028466'")
-        parsed_query = RA.parse_query({"title": 'The production effect'})
+        parsed_query = self.ra.parse_query(
+            'Information revelation and privacy in online social networks')
         expr = parsed_query["expr"]
-        self.assertEqual(expr,  "Ti='the production effect'")
+        self.assertEqual(
+            expr,
+            "Ti='information revelation and privacy in online social networks'"
+        )
 
     def test_evaluate(self):
-        results = self.ra.evaluate({"doi": "10.1037/A0028466"}, timeout=5)
+        results = self.ra.evaluate("10.1037/A0028466", timeout=5)
         result = results[0]
         self.assertEqual(result["doi"], "10.1037/A0028466")
 
