@@ -73,7 +73,11 @@ class EntityParser(object):
 
     def parse_abstract(self):
         entity = self.entity
-        inverted_abstract = entity.pop("IA")
+        try:
+            inverted_abstract = entity.pop("IA")
+        except KeyError:
+            return {"abstract": ""}
+
         index_length = inverted_abstract["IndexLength"]
         inverted_index = inverted_abstract["InvertedIndex"]
         abstract = [""] * index_length
