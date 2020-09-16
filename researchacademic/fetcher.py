@@ -23,20 +23,20 @@ class ResearchAcademic(object):
             "attributes": self.attributes
         }
 
-    @staticmethod
-    def parse_query(query):
-        if "doi" in query:
-            doi = query["doi"]
-            return {
-                 "expr": f"DOI='{doi}'"
-            }
+    def parse_query(self, query, timeout=None):
+        url = self.base_url + "/interpret"
+        rsp = requests.get(url,
+                           {"query": query, "complete": 0, "timeout":  2000},
+                           headers=self.headers)
 
-        elif "title" in query:
-            title = query["title"]
-            title = title.lower()
-            return {
-                 "expr": f"Ti='{title}'"
-            }
+        content = json.loads(rsp.content)
+
+        try:
+            expr = content["interpretations"][0]["rules"][0]["output"]["value"]
+        except (KeyError, IndexError):
+            return None
+
+        return {"expr": expr}
 
     def evaluate(self, query, timeout=None, attributes=None):
         if not timeout:
@@ -47,7 +47,10 @@ class ResearchAcademic(object):
 
         url = self.base_url + "/evaluate"
 
-        parsed_query = ResearchAcademic.parse_query(query)
+        parsed_query = self.parse_query(query)
+        if not parsed_query:
+            return []
+
         data = {**self.data, **parsed_query}
 
         rsp = requests.post(url,

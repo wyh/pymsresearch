@@ -18,6 +18,6 @@ deploy:
   provider: pypi
   distributions: sdist bdist_wheel
   username: "__token__"
-  password: "pypi-AgEIcHlwaS5vcmcCJGY2MmJmZjI3LWJlMmYtNGEyZC1iODhlLTllYzhlZjZlODc2NQACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgtyZ3LhZai4tJ1CbOHLSGcctHIHBegdZJJFjcpIr2Ki4"
+  password: {{PASSWD}}
   on:
     tags: true
